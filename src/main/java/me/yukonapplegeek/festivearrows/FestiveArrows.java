@@ -60,7 +60,7 @@ public class FestiveArrows extends JavaPlugin {
         if ((sender.isOp() || sender.hasPermission("festivearrows.letitgoboom")) && cmd.getName().equalsIgnoreCase("letitgoboom")) {
             letItGoBoomEnabled = !letItGoBoomEnabled;
             if (letItGoBoomEnabled) {
-                this.getServer().broadcastMessage(ChatColor.GREEN.toString() + ChatColor.BOLD + "Let it go BOOM!");
+                this.getServer().broadcastMessage(ChatColor.GREEN.toString() + ChatColor.BOLD + "Let it go BOOM!, escribe el comando otra vez para desactivarlo.");
             }
 
             return true;

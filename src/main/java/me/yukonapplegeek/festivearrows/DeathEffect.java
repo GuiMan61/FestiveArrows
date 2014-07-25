@@ -10,7 +10,7 @@ import org.bukkit.event.entity.PlayerDeathEvent;
 public class DeathEffect implements Listener {
     private final FireworkEffect effect = FireworkEffect.builder()
         .with(FireworkEffect.Type.BALL)
-        .withColor(Color.RED, Color.WHITE, Color.BLUE)
+        .withColor(Color.RED, Color.WHITE, Color.BLUE, Color.ORANGE, Color.AQUA)
         .build();
 
     @EventHandler(priority = EventPriority.MONITOR)

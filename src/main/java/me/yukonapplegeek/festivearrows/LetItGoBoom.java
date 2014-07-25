@@ -9,7 +9,7 @@ import org.bukkit.event.player.PlayerMoveEvent;
 public class LetItGoBoom implements Listener {
     private final FireworkEffect effect = FireworkEffect.builder()
         .with(FireworkEffect.Type.BURST)
-        .withColor(Color.RED, Color.WHITE, Color.BLUE)
+        .withColor(Color.RED, Color.WHITE, Color.BLUE, Color.YELLOW, Color.GREEN)
         .withTrail()
         .build();
 

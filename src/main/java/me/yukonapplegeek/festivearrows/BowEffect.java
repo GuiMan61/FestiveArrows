@@ -11,7 +11,7 @@ import org.bukkit.scheduler.BukkitRunnable;
 public class BowEffect implements Listener {
     private final FireworkEffect effect = FireworkEffect.builder()
         .with(FireworkEffect.Type.BURST)
-        .withColor(Color.RED, Color.WHITE, Color.BLUE)
+        .withColor(Color.RED)
         .withTrail()
         .build();
 
@@ -22,6 +22,6 @@ public class BowEffect implements Listener {
             public void run() {
                 FestiveArrows.playFirework(event.getProjectile().getLocation(), effect);
             }
-        }.runTaskLater(FestiveArrows.get(), FestiveArrows.get().getConfig().getInt("bow.delay", 15));
+        }.runTaskLater(FestiveArrows.get(), FestiveArrows.get().getConfig().getInt("bow.delay", 6));
     }
 }
